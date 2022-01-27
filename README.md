@@ -26,7 +26,7 @@ android {
 
 만약 모듈에 `viewBinding`이 enable되었다면, 모듈이 포함하는 각 XML 레이아웃에 대한 `binding class`가 생성됩니다. 각각의 `binding class`는 ID를 가지고 있는 모든 뷰와 root 뷰에 대한 참조를 포함합니다. `binding class`의 이름은 XML 파일의 이름을 파스칼 대소문자로 변환하고 끝에 "Binding"이라는 단어를 추가하여 생성됩니다.
 
-이렇게 생성된 `binding class`는 상응하는 레이아웃 파일의 **root 뷰에 대한 직접 참조를 제공**하는 `**getRoot()**`라는 메서드를 포함하고 있습니다.<br/><br/>
+이렇게 생성된 `binding class`는 상응하는 레이아웃 파일의 **root 뷰에 대한 직접 참조를 제공**하는 **`getRoot()`**라는 메서드를 포함하고 있습니다.<br/><br/>
 
 ## **2. ViewBinding 사용**
 
@@ -36,7 +36,7 @@ android {
 
 1. 생성된 `binding class`에 포함된 static **`inflate()` 메서드를 호출**함으로써 Activity에서 사용할  `binding class`의 객체를 만듭니다.
 
-2. `**getRoot()` 메서드를 호출**하거나 **코틀린 프로퍼티 구문을 사용**해서 root 뷰에 대한 참조를 가져옵니다.
+2. **`getRoot()` 메서드를 호출**하거나 **코틀린 프로퍼티 구문을 사용**해서 root 뷰에 대한 참조를 가져옵니다.
 
 3. **root 뷰를 `setContentView()`로 전달**하여 화면에 활성화된 뷰를 만듭니다.
 
